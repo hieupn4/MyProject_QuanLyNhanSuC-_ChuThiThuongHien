@@ -1,0 +1,161 @@
+E:\BTTTTN\QLNS\QLNS\bin\Debug\QLNS.exe
+E:\BTTTTN\QLNS\QLNS\bin\Debug\QLNS.pdb
+E:\BTTTTN\QLNS\QLNS\obj\Debug\ResolveAssemblyReference.cache
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.Properties.Resources.resources
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.csproj.GenerateResource.Cache
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.exe
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.pdb
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.frmthongtincanhan.resources
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.frmcoban.resources
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.FrmMain.resources
+E:\BTTTTN\QLNS\QLNS\bin\Debug\Interop.WMPLib.dll
+E:\BTTTTN\QLNS\QLNS\bin\Debug\AxInterop.WMPLib.dll
+E:\BTTTTN\QLNS\QLNS\obj\Debug\Interop.WMPLib.dll
+E:\BTTTTN\QLNS\QLNS\obj\Debug\AxInterop.WMPLib.dll
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.csproj.ResolveComReference.cache
+E:\BTTTTN\QLNS\QLNS\bin\Debug\QLNS.exe.config
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.frmchedo.resources
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.frmtienluong.resources
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.frmdoimatkhau.resources
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.frmbangcong.resources
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.frmbophan.resources
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.frmhosothuviec.resources
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.frmluong.resources
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.frmphongban.resources
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.frmtimkiem.resources
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.frmdangki.resources
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.frmdangnhap.resources
+E:\BTTTTN\QLNS\QLNS\obj\Debug\QLNS.frmbaocao.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\bin\Debug\QLNS.exe.config
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\Interop.WMPLib.dll
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\AxInterop.WMPLib.dll
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.csproj.ResolveComReference.cache
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.exe
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.pdb
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\ResolveAssemblyReference.cache
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.frmbaocao.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.frmdangki.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.frmdangnhap.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.frmbangcong.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.frmbophan.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.frmchedo.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.frmcoban.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.frmdoimatkhau.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.frmhosothuviec.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.frmluong.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.FrmMain.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.frmthongtincanhan.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.frmtienluong.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.frmtimkiem.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.Properties.Resources.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.frmphongban.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.csproj.GenerateResource.Cache
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\bin\Debug\QLNS.exe
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\bin\Debug\QLNS.pdb
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\bin\Debug\Interop.WMPLib.dll
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\bin\Debug\AxInterop.WMPLib.dll
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.frmtrogiup.resources
+E:\BTTTTN\Nhóm 10 -  quản lý nhân sự\QLNS\QLNS\obj\Debug\QLNS.fRMBCphongban.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\bin\Debug\QLNS.exe.config
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\Interop.WMPLib.dll
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.csproj.ResolveComReference.cache
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.exe
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.pdb
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\bin\Debug\QLNS.exe
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\bin\Debug\QLNS.pdb
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\bin\Debug\Interop.WMPLib.dll
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.frmbaocao.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.fRMBCphongban.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.frmdangki.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.frmdangnhap.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.frmbangcong.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.frmbophan.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.frmchedo.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.frmcoban.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.frmdoimatkhau.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.frmhosothuviec.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.frmluong.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.FrmMain.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.frmthongtincanhan.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.frmtienluong.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.frmtimkiem.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.frmtrogiup.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.Properties.Resources.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.frmphongban.resources
+C:\Users\ACER\Desktop\[Sharecode.vn] Phan mem quan ly nhan su full code + bao cao\QLNS\QLNS\obj\Debug\QLNS.csproj.GenerateResource.Cache
+C:\Users\Hienkute\Desktop\QLNS\QLNS\bin\Debug\QLNS.exe.config
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\Interop.WMPLib.dll
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.csproj.ResolveComReference.cache
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.exe
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.pdb
+C:\Users\Hienkute\Desktop\QLNS\QLNS\bin\Debug\QLNS.exe
+C:\Users\Hienkute\Desktop\QLNS\QLNS\bin\Debug\QLNS.pdb
+C:\Users\Hienkute\Desktop\QLNS\QLNS\bin\Debug\Interop.WMPLib.dll
+C:\Users\Hienkute\Desktop\QLNS\QLNS\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmbaocao.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.fRMBCphongban.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmdangki.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmdangnhap.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmbangcong.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmbophan.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmchedo.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmcoban.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmdoimatkhau.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmhosothuviec.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmluong.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.FrmMain.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmthongtincanhan.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmtienluong.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmtimkiem.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmtrogiup.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.Properties.Resources.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmphongban.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.csproj.GenerateResource.Cache
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmthongtincanhan2.resources
+C:\Users\Hienkute\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmluanchuyen.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\bin\Debug\QLNS.exe.config
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\Interop.WMPLib.dll
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.csproj.ResolveComReference.cache
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.exe
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.pdb
+C:\Users\ACER\Desktop\QLNS\QLNS\bin\Debug\QLNS.exe
+C:\Users\ACER\Desktop\QLNS\QLNS\bin\Debug\QLNS.pdb
+C:\Users\ACER\Desktop\QLNS\QLNS\bin\Debug\Interop.WMPLib.dll
+C:\Users\ACER\Desktop\QLNS\QLNS\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmbaocao.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.fRMBCphongban.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmdangki.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmdangnhap.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmbangcong.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmbophan.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmchedo.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmdoimatkhau.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmhosothuviec.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmluanchuyen.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmluong.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.FrmMain.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmthongtincanhan2.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmtienluong.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmtimkiem.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.Properties.Resources.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmphongban.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.csproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.Cry_luanchyen.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.Cry_bophan.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.Cry_thuviec.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmtuybien.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmCry_hienthitheophongban.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frmKhenThuongKyLuat.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frm_Cry_thaisan.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frm_Cry_baohiem.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frm_giaCong.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.Cry_TTCN_Employee.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.frm_cry_tangluong.resources
+C:\Users\ACER\Desktop\QLNS\QLNS\obj\Debug\QLNS.Cry_chamcong.resources

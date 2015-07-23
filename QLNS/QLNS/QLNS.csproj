@@ -1,0 +1,955 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A55A2E65-71C7-44C7-A37A-60ED64D589B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLNS</RootNamespace>
+    <AssemblyName>QLNS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="baohiem.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>baohiem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Clsdatabase.cs" />
+    <Compile Include="baocao.cs">
+      <DependentUpon>baocao.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="baocao.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>baocao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cry_chamcong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cry_chamcong.Designer.cs">
+      <DependentUpon>Cry_chamcong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cry_chamcong_.cs">
+      <DependentUpon>Cry_chamcong_.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Cry_tangluong_.cs">
+      <DependentUpon>Cry_tangluong_.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Cry_TTCN_.cs">
+      <DependentUpon>Cry_TTCN_.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Cry_TTCN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_TTCN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cry_TTCN_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cry_TTCN_Employee.Designer.cs">
+      <DependentUpon>Cry_TTCN_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DS_chamcong.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_chamcong.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds_tang_luong.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_tang_luong.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmbangcong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbangcong.Designer.cs">
+      <DependentUpon>frmbangcong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cry_baohiem.cs">
+      <DependentUpon>Cry_baohiem.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Cry_thaisan.cs">
+      <DependentUpon>Cry_thaisan.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Cry_hien_thi_theo_phongban1.cs">
+      <DependentUpon>Cry_hien_thi_theo_phongban.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Cry_hienthitheophongban.cs">
+      <DependentUpon>Cry_hienthitheophongban.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cry_hienthitheophongban.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_hienthitheophongban.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cry_thuviec_.cs">
+      <DependentUpon>Cry_thuviec_.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Cry_thu_viec.cs">
+      <DependentUpon>Cry_thu_viec.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Cry_bo_phan.cs">
+      <DependentUpon>Cry_bo_phan.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Cry_bophan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cry_bophan.Designer.cs">
+      <DependentUpon>Cry_bophan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cry_bophan1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cry_bophan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cry_luan_chuyen.cs">
+      <DependentUpon>Cry_luan_chuyen.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cry_luanchyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cry_luanchyen.Designer.cs">
+      <DependentUpon>Cry_luanchyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cry_thuviec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cry_thuviec.Designer.cs">
+      <DependentUpon>Cry_thuviec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ctr_phongban.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ctr_phongban.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet3.cs">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_thuviec.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_thuviec.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmbaocao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbaocao.Designer.cs">
+      <DependentUpon>frmbaocao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fRMBCphongban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fRMBCphongban.Designer.cs">
+      <DependentUpon>fRMBCphongban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCry_hienthitheophongban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCry_hienthitheophongban.Designer.cs">
+      <DependentUpon>frmCry_hienthitheophongban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdangki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdangki.Designer.cs">
+      <DependentUpon>frmdangki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdangnhap.Designer.cs">
+      <DependentUpon>frmdangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbophan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbophan.Designer.cs">
+      <DependentUpon>frmbophan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmchedo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmchedo.Designer.cs">
+      <DependentUpon>frmchedo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdoimatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdoimatkhau.Designer.cs">
+      <DependentUpon>frmdoimatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmhosothuviec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmhosothuviec.Designer.cs">
+      <DependentUpon>frmhosothuviec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhenThuongKyLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhenThuongKyLuat.Designer.cs">
+      <DependentUpon>frmKhenThuongKyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmluanchuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmluanchuyen.Designer.cs">
+      <DependentUpon>frmluanchuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmluong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmluong.Designer.cs">
+      <DependentUpon>frmluong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmthongtincanhan2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmthongtincanhan2.Designer.cs">
+      <DependentUpon>frmthongtincanhan2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtienluong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtienluong.Designer.cs">
+      <DependentUpon>frmtienluong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtimkiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtimkiem.Designer.cs">
+      <DependentUpon>frmtimkiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtuybien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtuybien.Designer.cs">
+      <DependentUpon>frmtuybien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Cry_baohiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Cry_baohiem.Designer.cs">
+      <DependentUpon>frm_Cry_baohiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cry_tangluong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cry_tangluong.Designer.cs">
+      <DependentUpon>frm_cry_tangluong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Cry_thaisan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Cry_thaisan.Designer.cs">
+      <DependentUpon>frm_Cry_thaisan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_giaCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_giaCong.Designer.cs">
+      <DependentUpon>frm_giaCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cry_chamcong.resx">
+      <DependentUpon>Cry_chamcong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cry_chamcong_.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_chamcong_.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cry_tangluong_.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_tangluong_.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cry_TTCN_.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_TTCN_.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cry_TTCN_Employee.resx">
+      <DependentUpon>Cry_TTCN_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbangcong.resx">
+      <DependentUpon>frmbangcong.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cry_baohiem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_baohiem.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cry_thaisan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_thaisan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cry_hien_thi_theo_phongban.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_hien_thi_theo_phongban1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cry_thuviec_.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_thuviec_.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cry_thu_viec.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_thu_viec.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cry_bo_phan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_bo_phan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cry_bophan.resx">
+      <DependentUpon>Cry_bophan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cry_luan_chuyen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_luan_chuyen.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cry_luanchyen.resx">
+      <DependentUpon>Cry_luanchyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cry_thuviec.resx">
+      <DependentUpon>Cry_thuviec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctr_phongban.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Ctr_phongban.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbaocao.resx">
+      <DependentUpon>frmbaocao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fRMBCphongban.resx">
+      <DependentUpon>fRMBCphongban.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCry_hienthitheophongban.resx">
+      <DependentUpon>frmCry_hienthitheophongban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdangki.resx">
+      <DependentUpon>frmdangki.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdangnhap.resx">
+      <DependentUpon>frmdangnhap.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbophan.resx">
+      <DependentUpon>frmbophan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmchedo.resx">
+      <DependentUpon>frmchedo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdoimatkhau.resx">
+      <DependentUpon>frmdoimatkhau.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmhosothuviec.resx">
+      <DependentUpon>frmhosothuviec.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhenThuongKyLuat.resx">
+      <DependentUpon>frmKhenThuongKyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmluanchuyen.resx">
+      <DependentUpon>frmluanchuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmluong.resx">
+      <DependentUpon>frmluong.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmthongtincanhan2.resx">
+      <DependentUpon>frmthongtincanhan2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtienluong.resx">
+      <DependentUpon>frmtienluong.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtimkiem.resx">
+      <DependentUpon>frmtimkiem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtuybien.resx">
+      <DependentUpon>frmtuybien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Cry_baohiem.resx">
+      <DependentUpon>frm_Cry_baohiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cry_tangluong.resx">
+      <DependentUpon>frm_cry_tangluong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Cry_thaisan.resx">
+      <DependentUpon>frm_Cry_thaisan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_giaCong.resx">
+      <DependentUpon>frm_giaCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmphongban.resx">
+      <DependentUpon>frmphongban.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmphongban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmphongban.Designer.cs">
+      <DependentUpon>frmphongban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thaisan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>thaisan.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button6.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button3.Image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button2.Image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button2.Image1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button8.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button1.Image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button3.Image1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button5.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_disk.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\anh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button7.Image.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="baocao.xsc">
+      <DependentUpon>baocao.xsd</DependentUpon>
+    </None>
+    <None Include="baocao.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>baocao.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="baocao.xss">
+      <DependentUpon>baocao.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\timkiem.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="baocao\QUẢN LÝ NHￂN SỰ.doc" />
+    <None Include="baohiem.xsc">
+      <DependentUpon>baohiem.xsd</DependentUpon>
+    </None>
+    <None Include="baohiem.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>baohiem.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="baohiem.xss">
+      <DependentUpon>baohiem.xsd</DependentUpon>
+    </None>
+    <None Include="cry_bophan.xsc">
+      <DependentUpon>cry_bophan.xsd</DependentUpon>
+    </None>
+    <None Include="cry_bophan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cry_bophan1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="cry_bophan.xss">
+      <DependentUpon>cry_bophan.xsd</DependentUpon>
+    </None>
+    <None Include="Cry_hienthitheophongban.xsc">
+      <DependentUpon>Cry_hienthitheophongban.xsd</DependentUpon>
+    </None>
+    <None Include="Cry_hienthitheophongban.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cry_hienthitheophongban.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Cry_hienthitheophongban.xss">
+      <DependentUpon>Cry_hienthitheophongban.xsd</DependentUpon>
+    </None>
+    <None Include="Cry_TTCN.xsc">
+      <DependentUpon>Cry_TTCN.xsd</DependentUpon>
+    </None>
+    <None Include="Cry_TTCN.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cry_TTCN.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Cry_TTCN.xss">
+      <DependentUpon>Cry_TTCN.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DS_chamcong.xsc">
+      <DependentUpon>DS_chamcong.xsd</DependentUpon>
+    </None>
+    <None Include="DS_chamcong.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_chamcong.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_chamcong.xss">
+      <DependentUpon>DS_chamcong.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_tang_luong.xsc">
+      <DependentUpon>Ds_tang_luong.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_tang_luong.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_tang_luong.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Ds_tang_luong.xss">
+      <DependentUpon>Ds_tang_luong.xsd</DependentUpon>
+    </None>
+    <None Include="DS_thuviec.xsc">
+      <DependentUpon>DS_thuviec.xsd</DependentUpon>
+    </None>
+    <None Include="DS_thuviec.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_thuviec.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_thuviec.xss">
+      <DependentUpon>DS_thuviec.xsd</DependentUpon>
+    </None>
+    <None Include="icon\4 Free icons-magician-gift-tree-money\all.psd" />
+    <None Include="icon\4 Free icons-magician-gift-tree-money\icns\leisure.icns" />
+    <None Include="icon\4 Free icons-magician-gift-tree-money\icns\leisure_no_shadow.icns" />
+    <None Include="icon\4 Free icons-magician-gift-tree-money\icns\money.icns" />
+    <None Include="icon\4 Free icons-magician-gift-tree-money\icns\money_no_shadow.icns" />
+    <None Include="icon\4 Free icons-magician-gift-tree-money\icns\present.icns" />
+    <None Include="icon\4 Free icons-magician-gift-tree-money\icns\present_no_shadow.icns" />
+    <None Include="icon\4 Free icons-magician-gift-tree-money\icns\wizard.icns" />
+    <None Include="icon\4 Free icons-magician-gift-tree-money\icns\wizard_no_shadow.icns" />
+    <None Include="Resources\untitled.JPG" />
+    <None Include="thaisan.xsc">
+      <DependentUpon>thaisan.xsd</DependentUpon>
+    </None>
+    <None Include="thaisan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>thaisan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="thaisan.xss">
+      <DependentUpon>thaisan.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\bmp\leisure.bmp" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\bmp\leisure_no_shadow.bmp" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\bmp\money.bmp" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\bmp\money_no_shadow.bmp" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\bmp\present.bmp" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\bmp\present_no_shadow.bmp" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\bmp\wizard.bmp" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\bmp\wizard_no_shadow.bmp" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\128x128\leisure.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\128x128\leisure_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\128x128\money.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\128x128\money_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\128x128\present.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\128x128\present_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\128x128\wizard.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\128x128\wizard_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\256x256\leisure.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\256x256\leisure_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\256x256\money.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\256x256\money_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\256x256\present.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\256x256\present_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\256x256\wizard.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\256x256\wizard_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\32x32\leisure.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\32x32\leisure_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\32x32\money.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\32x32\money_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\32x32\present.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\32x32\present_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\32x32\wizard.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\32x32\wizard_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\48x48\leisure.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\48x48\leisure_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\48x48\money.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\48x48\money_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\48x48\present.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\48x48\present_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\48x48\wizard.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\gif\48x48\wizard_no_shadow.gif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\icon_list.txt" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\ico\leisure.ico" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\ico\leisure_no_shadow.ico" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\ico\money.ico" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\ico\money_no_shadow.ico" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\ico\present.ico" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\ico\present_no_shadow.ico" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\ico\wizard.ico" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\ico\wizard_no_shadow.ico" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\128x128\leisure.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\128x128\leisure_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\128x128\money.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\128x128\money_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\128x128\present.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\128x128\present_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\128x128\wizard.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\128x128\wizard_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\256x256\leisure.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\256x256\leisure_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\256x256\money.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\256x256\money_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\256x256\present.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\256x256\present_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\256x256\wizard.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\256x256\wizard_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\32x32\leisure.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\32x32\leisure_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\32x32\money.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\32x32\money_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\32x32\present.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\32x32\present_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\32x32\wizard.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\32x32\wizard_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\48x48\leisure.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\48x48\leisure_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\48x48\money.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\48x48\money_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\48x48\present.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\48x48\present_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\48x48\wizard.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\png\48x48\wizard_no_shadow.png" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\preview.jpg" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\readme.txt" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\128x128\leisure.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\128x128\leisure_no_shadow.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\128x128\money.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\128x128\money_no_shadow.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\128x128\present.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\128x128\present_no_shadow.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\128x128\wizard.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\128x128\wizard_no_shadow.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\256x256\leisure.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\256x256\leisure_no_shadow.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\256x256\money.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\256x256\money_no_shadow.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\256x256\present.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\256x256\present_no_shadow.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\256x256\wizard.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\256x256\wizard_no_shadow.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\32x32\leisure.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\32x32\leisure_no_shadow.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\32x32\money.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\32x32\money_no_shadow.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\32x32\present.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\32x32\present_no_shadow.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\32x32\wizard.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\32x32\wizard_no_shadow.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\48x48\leisure.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\48x48\leisure_no_shadow.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\48x48\money.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\48x48\money_no_shadow.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\48x48\present.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\48x48\present_no_shadow.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\48x48\wizard.tif" />
+    <Content Include="icon\4 Free icons-magician-gift-tree-money\tiff\48x48\wizard_no_shadow.tif" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Alert.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Applications.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Back.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Bookmark.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Char.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Delete.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Documents.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Download.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Favorite.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Forward.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\HD.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Home.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Mail.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Package.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Refresh.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\RSS.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Search.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Security.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Select.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Settings.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Speaker.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Stats.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Stop.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\System.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Temporary.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Upload.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\User.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Video.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Weather.ico" />
+    <Content Include="icon\Minicons_by_Asher\Ico\Web.ico" />
+    <Content Include="icon\Minicons_by_Asher\Png\Alert.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Applications.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Back.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Bookmark.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Char.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Delete.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Documents.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Download.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Favorite.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Forward.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\HD.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Home.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Mail.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Package.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Refresh.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\RSS.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Search.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Security.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Select.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Settings.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Speaker.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Stats.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Stop.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\System.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Temporary.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Upload.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\User.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Video.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Weather.png" />
+    <Content Include="icon\Minicons_by_Asher\Png\Web.png" />
+    <Content Include="icon\Minicons_by_Asher\Preview.jpg" />
+    <Content Include="icon\Minicons_by_Asher\Readme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
